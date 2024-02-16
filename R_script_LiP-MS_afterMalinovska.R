@@ -60,10 +60,10 @@ library(utils)
 #load file from Spectronaut (directDIA search; without trypsin; default MSStats Report)
 #choose.files is an interactive function that opens a window dialog in which you can choose the corresponding .csv file
 
-# my_raw_lip <- read_delim(file=choose.files(caption="Choose LiP dataset"), 
-#                       delim=",", escape_double = FALSE, trim_ws = TRUE) #choose "20240215_153149_F2310_JJ_RhoA_LiP_unspecific_newCont_Norm_noImp_Report_excerpt.csv"
-my_raw_lip <- read_delim("/workspaces/blackmagicrproblem/20240215_153149_F2310_JJ_RhoA_LiP_unspecific_newCont_Norm_noImp_Report_excerpt.csv", delim=",", escape_double = FALSE, trim_ws = TRUE)  # DB: Direct path
-
+my_raw_lip <- read_delim(
+  # file=choose.files(caption="Choose LiP dataset"), #choose "20240215_153149_F2310_JJ_RhoA_LiP_unspecific_newCont_Norm_noImp_Report_excerpt.csv"
+  file="20240215_153149_F2310_JJ_RhoA_LiP_unspecific_newCont_Norm_noImp_Report_excerpt.csv",  #DB: direct path
+  delim=",", escape_double = FALSE, trim_ws = TRUE) 
 
 my_raw_prot <- read_delim(
   # file=choose.files(caption="Choose TrP dataset"), #select "20240215_181727_F2310_JJ_RhoA_Trp_specific_newCont_Norm_noImp_Report_excerpt.csv"
