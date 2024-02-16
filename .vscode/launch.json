@@ -1,0 +1,13 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "type": "R-Debugger",
+        "name": "Main",
+        "request": "launch",
+        "debugMode": "file",
+        "workingDirectory": "${workspaceFolder}",
+        "file": "R_script_LiP-MS_afterMalinovska.R"
+      }
+    ]
+  }
